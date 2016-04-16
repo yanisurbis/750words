@@ -1,0 +1,13 @@
+<body>
+{{>hello}}
+<div id="render-target"></div>
+</body>
+
+<template name="hello">
+    <h1>Blaze Example</h1>
+    <button class="{{styles.hello}}">Click Me</button>
+    <div class="{{styles.[oh-hi-there]}}">
+        <button>Click Me</button>
+    </div>
+    <h3>{{importedText}}</h3>
+</template>

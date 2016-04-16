@@ -1,0 +1,48 @@
+{
+  "name": "mss-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Reid",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  },
+  "devDependencies": {
+    "postcss-modules-extract-imports": "1.0.0",
+    "postcss-modules-local-by-default": "1.0.1",
+    "postcss-modules-scope": "1.0.0",
+    "postcss-modules-values": "1.1.2",
+    "postcss-nested": "1.0.0",
+    "postcss-simple-vars": "1.2.0",
+    "autoprefixer": "^6.3.6"
+  },
+  "cssModules": {
+    "extensions": [
+      "mss"
+    ],
+    "postcssPlugins": {
+      "postcss-simple-vars": {
+        "inlineOptions": {
+          "variables": {
+            "orange": "orange"
+          }
+        },
+        "fileOptions": [
+          "client/colors.mss",
+          "client/fonts.json"
+        ]
+      },
+      "postcss-modules-values": {},
+      "postcss-nested": {},
+      "postcss-modules-local-by-default": {},
+      "postcss-modules-extract-imports": {},
+      "postcss-modules-scope": {},
+      "autoprefixer": {}
+    }
+  }
+}
